@@ -50,12 +50,5 @@ public class ArrayListMethodsDemo {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
