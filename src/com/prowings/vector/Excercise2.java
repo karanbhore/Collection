@@ -9,7 +9,7 @@ public class Excercise2 {
 
 		System.out.println(v.capacity());
 
-		v.trimToSize();
+//		v.trimToSize();
 		System.out.println(v.capacity());
 		System.out.println();
 
