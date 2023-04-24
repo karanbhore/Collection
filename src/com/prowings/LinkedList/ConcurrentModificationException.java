@@ -3,6 +3,7 @@ package com.prowings.LinkedList;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ConcurrentModificationException {
 
@@ -13,16 +14,20 @@ public class ConcurrentModificationException {
 		for (int i = 0; i < 10; i++) {
 			l.add(i);
 		}
+		l.add("a");
 		System.out.println(l);
 		System.out.println();
-		l.add(10);
-		l.remove(5);
-		Iterator itr = l.listIterator();
+
+		ListIterator itr = l.listIterator();
 		while (itr.hasNext()) {
-			l.set(0, 15);
+//			l.set(0, 15);
+			if (itr.next() == "a") {
+				itr.remove();
+			}
 
-			System.out.println(itr.next());
+//			l.add(5);
+//			System.out.println(itr.next());
 		}
-
+System.out.println(l);
 	}
 }

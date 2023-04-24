@@ -66,8 +66,8 @@ public class CustoArrayListEx3 {
 		for (int i = 0; i < size; i++) {
 			Subject subject = l.get(i);
 
-			System.out.println(subject.name + "           " + "  " + subject.duration + "      " + "      " + subject.faculty
-					+ "      " + "       " + subject.fees + "      " + "       " + subject.time);
+			System.out.println(subject.name + "           " + "  " + subject.duration + "      " + "      "
+					+ subject.faculty + "      " + "       " + subject.fees + "      " + "       " + subject.time);
 
 		}
 
