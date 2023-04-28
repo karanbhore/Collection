@@ -47,6 +47,7 @@ public class ArrayListMethodsDemo {
 //		System.out.println(al3);
 		
 		System.out.println("after remove :"+al2);
+		System.out.println(al2.subList(0, 2));
 		
 		
 		

@@ -7,7 +7,7 @@ public class HashSetLoadFactorResizingDemo2  {
 
 	public static void main(String[] args) {
 		
-		LinkedHashSet hs=new LinkedHashSet<>();
+		HashSet hs=new HashSet<>();
 		
 		for(char i='a';i<'a'+14;i++)
 		{

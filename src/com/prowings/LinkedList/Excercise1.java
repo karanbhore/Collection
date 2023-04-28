@@ -18,7 +18,7 @@ public class Excercise1 {
 		myLinkedlist.add("20");
 		myLinkedlist.add("CCC");
 		myLinkedlist.add("DDD");
-		
+		myLinkedlist.push("end");
 		System.out.println(myLinkedlist.size());
 		
 		System.out.println(myLinkedlist);
@@ -29,6 +29,8 @@ public class Excercise1 {
 		{
 			System.out.println(itr.next());
 		}
+		System.out.println();
+		System.out.println(myLinkedlist.pop());
 		
 	}
 
