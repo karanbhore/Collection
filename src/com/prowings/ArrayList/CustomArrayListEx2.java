@@ -38,7 +38,7 @@ public class CustomArrayListEx2 {
 		float[] prating = { 4.5f, 4.5f, 5f, 5f, 7f, 7f };
 
 		CustomArrayListEx2 obj = new CustomArrayListEx2();
-		obj.addElements(pname, pprice, pavailability, prating, pid);
+		obj.addElements(pname, pprice, pavailabilicty, prating, pid);
 
 	}
 

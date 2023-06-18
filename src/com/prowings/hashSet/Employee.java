@@ -2,7 +2,8 @@ package com.prowings.hashSet;
 
 import java.util.HashSet;
 import java.util.Objects;
-
+// here we will understand how hashSet adds objects internally using hashCode
+// if we not overrided equals() and hashCode() 
 public class Employee {
 
 	int id;
@@ -24,23 +25,23 @@ public class Employee {
 		return "Employee [id=" + id + ", name=" + name + "]";
 	}
 
-	public boolean equals(Object obj) {
-		boolean res = false;
-
-		if (this == obj) {
-			return res = true;
-		}
-		if (obj == null)
-			return res = false;
-		if (this.getClass() != obj.getClass())
-			return false;
-		Employee other = (Employee) obj;
-		return id == other.id && this.name.equals(other.name);
-	}
-
-	public int hashCode() {
-		return (this.id + this.name.hashCode()) * 31;
-	}
+//	public boolean equals(Object obj) {
+//		boolean res = false;
+//
+//		if (this == obj) {
+//			return res = true;
+//		}
+//		if (obj == null)
+//			return res = false;
+//		if (this.getClass() != obj.getClass())
+//			return false;
+//		Employee other = (Employee) obj;
+//		return id == other.id && this.name.equals(other.name);
+//	}
+//
+//	public int hashCode() {
+//		return (this.id + this.name.hashCode()) * 31;
+//	}
 
 	public static void main(String[] args) {
 
@@ -55,10 +56,15 @@ public class Employee {
 
 		System.out.println();
 		System.out.println(hs);
-		StringBuilder sb=new StringBuilder();
-sb.append("hello");
-System.out.println(sb);
-StringBuffer sbb=new StringBuffer(sb);
-System.out.println(sbb);
+
+		HashSet hs1 = new HashSet<>();
+		for(char i='a';i<'a'+14;i++)
+		{
+			System.out.println(hs1.add(i));
+		}
+		System.out.println();
+		System.out.println(hs1);
+
 	}
 }
+

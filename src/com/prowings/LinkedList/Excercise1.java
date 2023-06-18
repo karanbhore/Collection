@@ -19,6 +19,7 @@ public class Excercise1 {
 		myLinkedlist.add("CCC");
 		myLinkedlist.add("DDD");
 		myLinkedlist.push("end");
+		myLinkedlist.add(null);
 		System.out.println(myLinkedlist.size());
 		
 		System.out.println(myLinkedlist);
@@ -31,6 +32,7 @@ public class Excercise1 {
 		}
 		System.out.println();
 		System.out.println(myLinkedlist.pop());
+		System.out.println(myLinkedlist);
 		
 	}
 

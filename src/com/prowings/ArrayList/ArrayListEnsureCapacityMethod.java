@@ -19,7 +19,7 @@ public class ArrayListEnsureCapacityMethod {
 			al.add(30);
 			
 			
-			al.ensureCapacity(20);
+			al.ensureCapacity(1);
 			
 			try {
 				System.out.println("initial capacity : "+getCapacity(al));
@@ -30,7 +30,13 @@ public class ArrayListEnsureCapacityMethod {
 			System.out.println("size : "+al.size());
 
 			System.out.println(al);
-			
+			System.out.println(al.size());
+			System.out.println("<<<<>>>>>");
+			al.set(5, "karan");
+			System.out.println(al);
+			System.out.println("<<<<>>>>>>>");
+//			al.ensureCapacity(5);
+//			System.out.println(al.size());
 		}
 
 		

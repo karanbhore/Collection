@@ -19,13 +19,13 @@ public class CollectionConversion {
 		l.add(5);
 		System.out.println(l);
 		System.out.println(l instanceof Iterable);
-
+System.out.println("<<<<<<>>>");
 		ArrayList a = new ArrayList<>();
 
 		a.addAll(l);
 		System.out.println(a);
 		System.out.println(a instanceof Iterable);
-
+System.out.println("<<<<>>>>>");
 		System.out.println(a.contains(1));
 		System.out.println("last element of LinkedList l :" + l.getLast());
 

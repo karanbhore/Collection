@@ -9,7 +9,7 @@ public class Excercise1 {
 		Vector v = new Vector<>();
 
 		for (char i = 'A'; i <= 'Z'; i++) {
-			if (i % 2 == 0)
+//			if (i % 2 == 0)
 				v.add(i);
 		}
 		System.out.println(v);
